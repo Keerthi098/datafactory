@@ -1,5 +1,5 @@
 {
-	"name": "output_parquet",
+	"name": "parquet_file",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -15,7 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "output"
+				"container": {
+					"value": "@dataset().path",
+					"type": "Expression"
+				}
 			},
 			"compressionCodec": "snappy"
 		},
