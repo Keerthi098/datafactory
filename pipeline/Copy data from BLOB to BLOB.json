@@ -54,7 +54,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Containername": {
-								"value": "@pipeline().parameters.ContainerName",
+								"value": "@pipeline().parameters.inputContainerName",
 								"type": "Expression"
 							}
 						}
@@ -62,8 +62,14 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "outputcsv",
-						"type": "DatasetReference"
+						"referenceName": "inputcsvfile",
+						"type": "DatasetReference",
+						"parameters": {
+							"Containername": {
+								"value": "@pipeline().parameters.outputContainerName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			},
