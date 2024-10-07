@@ -57,10 +57,6 @@
 							"Containername": {
 								"value": "@pipeline().parameters.inputpipelinepara",
 								"type": "Expression"
-							},
-							"filename": {
-								"value": "@pipeline().parameters.input_Filename",
-								"type": "Expression"
 							}
 						}
 					}
