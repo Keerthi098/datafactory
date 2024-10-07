@@ -51,7 +51,13 @@
 				"inputs": [
 					{
 						"referenceName": "inputcsvfile",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Containername": {
+								"value": "@pipeline().parameters.ContainerName",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
