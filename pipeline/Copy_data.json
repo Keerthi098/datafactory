@@ -24,6 +24,10 @@
 								"value": "@pipeline().globalParameters.GlobalParameter",
 								"type": "Expression"
 							},
+							"wildcardFileName": {
+								"value": "@pipeline().parameters.input_Filename",
+								"type": "Expression"
+							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
