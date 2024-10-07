@@ -51,7 +51,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Containername": {
-								"value": "@pipeline().parameters.globalparameter",
+								"value": "@pipeline().globalParameters.GlobalParameter",
 								"type": "Expression"
 							},
 							"filename": {
@@ -87,9 +87,6 @@
 				"type": "string"
 			},
 			"output_filename": {
-				"type": "string"
-			},
-			"globalparameter": {
 				"type": "string"
 			}
 		},
