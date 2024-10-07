@@ -79,7 +79,7 @@
 			}
 		],
 		"parameters": {
-			"filename": {
+			"ContainerName": {
 				"type": "string"
 			}
 		},
