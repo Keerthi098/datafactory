@@ -132,12 +132,20 @@
 					"referenceName": "AzureBlobStorage1",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"Containername": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"container": "input"
+						"container": {
+							"value": "@dataset().Containername",
+							"type": "Expression"
+						}
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -175,6 +183,11 @@
 				"linkedServiceName": {
 					"referenceName": "AzureBlobStorage1",
 					"type": "LinkedServiceReference"
+				},
+				"parameters": {
+					"ou": {
+						"type": "string"
+					}
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -250,26 +263,59 @@
 							{
 								"referenceName": "inputcsvfile",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"Containername": {
+										"value": "@pipeline().parameters.inputContainerName",
+										"type": "Expression"
+									}
+								}
 							}
 						],
 						"outputs": [
 							{
-								"referenceName": "outputcsv",
+								"referenceName": "inputcsvfile",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"Containername": {
+										"value": "@pipeline().parameters.outputContainerName",
+										"type": "Expression"
+									}
+								}
 							}
 						]
+					},
+					{
+						"name": "Wait1",
+						"type": "Wait",
+						"dependsOn": [
+							{
+								"activity": "Copy data from BLOB to BLOB",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"waitTimeInSeconds": 1
+						}
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"parameters": {
+					"inputContainerName": {
+						"type": "string"
+					},
+					"outputContainerName": {
+						"type": "string"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/inputcsvfile')]",
-				"[concat(variables('factoryId'), '/datasets/outputcsv')]"
+				"[concat(variables('factoryId'), '/datasets/inputcsvfile')]"
 			]
 		}
 	]
