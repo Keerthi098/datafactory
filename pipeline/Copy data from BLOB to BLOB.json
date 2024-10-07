@@ -85,7 +85,10 @@
 			}
 		],
 		"parameters": {
-			"ContainerName": {
+			"inputContainerName": {
+				"type": "string"
+			},
+			"outputContainerName": {
 				"type": "string"
 			}
 		},
