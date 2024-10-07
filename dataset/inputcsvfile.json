@@ -2,14 +2,11 @@
 	"name": "inputcsvfile",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "InputBlob",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"Containername": {
-				"type": "string"
-			},
-			"filename": {
 				"type": "string"
 			}
 		},
@@ -18,10 +15,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().filename",
-					"type": "Expression"
-				},
 				"container": {
 					"value": "@dataset().Containername",
 					"type": "Expression"
@@ -50,5 +43,6 @@
 				"type": "String"
 			}
 		]
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }
