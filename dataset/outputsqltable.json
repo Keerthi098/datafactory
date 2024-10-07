@@ -1,6 +1,10 @@
 {
 	"name": "outputsqltable",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Output",
+			"type": "LinkedServiceReference"
+		},
 		"parameters": {
 			"tablename": {
 				"type": "string"
@@ -28,7 +32,6 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "dbo",
 			"table": {
 				"value": "@dataset().tablename",
 				"type": "Expression"
