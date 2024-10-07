@@ -36,6 +36,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"env": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
