@@ -20,10 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": {
-								"value": "@pipeline().parameters.inputpipelinepara",
-								"type": "Expression"
-							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -54,8 +50,8 @@
 						"referenceName": "inputcsvfile",
 						"type": "DatasetReference",
 						"parameters": {
-							"Containername": {
-								"value": "@pipeline().parameters.inputpipelinepara",
+							"filename": {
+								"value": "@pipeline().parameters.input_Filename",
 								"type": "Expression"
 							}
 						}
@@ -80,9 +76,6 @@
 			}
 		],
 		"parameters": {
-			"inputpipelinepara": {
-				"type": "string"
-			},
 			"outputpipelinepara": {
 				"type": "string"
 			},
@@ -90,6 +83,9 @@
 				"type": "string"
 			},
 			"output_filename": {
+				"type": "string"
+			},
+			"globalparameter": {
 				"type": "string"
 			}
 		},
