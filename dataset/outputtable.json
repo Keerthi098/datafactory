@@ -1,0 +1,36 @@
+{
+	"name": "outputtable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Output",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StaffName",
+				"type": "varchar"
+			},
+			{
+				"name": "Occupation",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Staff"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "AnviDataFactory",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c0f60013-d154-4eb7-bc94-57eb01a2a7a0",
+		"tenantId": "354640b9-b9cf-4cd7-ab10-be8526e23d25"
+	}
+}

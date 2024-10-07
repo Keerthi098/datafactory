@@ -1,0 +1,40 @@
+{
+	"name": "outputsqltable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Account_number",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Address",
+				"type": "varchar"
+			},
+			{
+				"name": "queryfor",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Account"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
