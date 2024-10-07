@@ -2,7 +2,7 @@
 	"name": "inputcsvfile",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "InputBlob",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
