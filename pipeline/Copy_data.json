@@ -20,6 +20,10 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
+							"wildcardFileName": {
+								"value": "@pipeline().parameters.inputpipelinepara",
+								"type": "Expression"
+							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -51,7 +55,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Containername": {
-								"value": "@pipeline().parameters.pipelineenv",
+								"value": "@pipeline().parameters.inputpipelinepara",
+								"type": "Expression"
+							},
+							"filename": {
+								"value": "@pipeline().parameters.input_Filename",
 								"type": "Expression"
 							}
 						}
@@ -62,14 +70,30 @@
 						"referenceName": "parquet_file",
 						"type": "DatasetReference",
 						"parameters": {
-							"path": "output"
+							"path": {
+								"value": "@pipeline().parameters.outputpipelinepara",
+								"type": "Expression"
+							},
+							"output_file": {
+								"value": "@pipeline().parameters.output_filename",
+								"type": "Expression"
+							}
 						}
 					}
 				]
 			}
 		],
 		"parameters": {
-			"pipelineenv": {
+			"inputpipelinepara": {
+				"type": "string"
+			},
+			"outputpipelinepara": {
+				"type": "string"
+			},
+			"input_Filename": {
+				"type": "string"
+			},
+			"output_filename": {
 				"type": "string"
 			}
 		},
