@@ -1,5 +1,13 @@
 {
 	"name": "AnviDataFactory",
+	"properties": {
+		"globalParameters": {
+			"GlobalParameter": {
+				"type": "string",
+				"value": "input"
+			}
+		}
+	},
 	"location": "australiaeast",
 	"identity": {
 		"type": "SystemAssigned",
