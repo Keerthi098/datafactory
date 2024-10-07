@@ -1,10 +1,6 @@
 {
 	"name": "outputsqltable",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "outputsql",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"tablename": {
 				"type": "string"
