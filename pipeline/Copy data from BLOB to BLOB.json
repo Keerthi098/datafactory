@@ -53,7 +53,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Containername": {
-								"value": "@pipeline().parameters.inputContainerName",
+								"value": "@pipeline().globalParameters.GlobalParameter",
 								"type": "Expression"
 							},
 							"filename": {
