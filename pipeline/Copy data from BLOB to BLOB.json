@@ -20,7 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": "employees.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -55,6 +54,10 @@
 						"parameters": {
 							"Containername": {
 								"value": "@pipeline().parameters.inputContainerName",
+								"type": "Expression"
+							},
+							"filename": {
+								"value": "@pipeline().parameters.inputfilename",
 								"type": "Expression"
 							}
 						}
@@ -95,6 +98,9 @@
 				"type": "string"
 			},
 			"outputContainerName": {
+				"type": "string"
+			},
+			"inputfilename": {
 				"type": "string"
 			}
 		},
