@@ -71,6 +71,10 @@
 							"Containername": {
 								"value": "@pipeline().parameters.outputContainerName",
 								"type": "Expression"
+							},
+							"filename": {
+								"value": "@pipeline().parameters.outputfilename",
+								"type": "Expression"
 							}
 						}
 					}
@@ -101,6 +105,9 @@
 				"type": "string"
 			},
 			"inputfilename": {
+				"type": "string"
+			},
+			"outputfilename": {
 				"type": "string"
 			}
 		},
