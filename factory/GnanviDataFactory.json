@@ -1,0 +1,17 @@
+{
+	"name": "GnanviDataFactory",
+	"properties": {
+		"globalParameters": {
+			"Input_Global": {
+				"type": "string",
+				"value": "input"
+			}
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b5f9ebfc-e780-4860-955e-75de2ca365e3",
+		"tenantId": "a7f58481-e1ac-48b8-b234-aaf6098e9d43"
+	}
+}
