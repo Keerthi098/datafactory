@@ -35,7 +35,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> Employees",
-				"Employees derive(DeductedSalary = ERROR_FUNCTION('')) ~> derivedColumn1"
+				"Employees derive(DeductedSalary = minus(SALARY,5000),",
+				"          column1 = ERROR_FUNCTION('')) ~> derivedColumn1"
 			]
 		}
 	}
