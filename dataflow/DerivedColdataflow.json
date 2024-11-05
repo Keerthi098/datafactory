@@ -36,8 +36,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> Employees",
 				"Employees derive(DeductedSalary = minus(SALARY,5000),",
-				"          Uppercase_Firstname = upper(FIRST_NAME),",
-				"          HIRE_DATE = ERROR_FUNCTION('')) ~> derivedColumn1"
+				"          Uppercase_Firstname = upper(FIRST_NAME)) ~> derivedColumn1"
 			]
 		}
 	}
