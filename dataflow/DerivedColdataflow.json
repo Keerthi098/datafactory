@@ -12,7 +12,11 @@
 					"name": "Employees"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "derivedColumn1"
@@ -36,7 +40,11 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> Employees",
 				"Employees derive(DeductedSalary = minus(SALARY,5000),",
-				"          Uppercase_Firstname = upper(FIRST_NAME)) ~> derivedColumn1"
+				"          Uppercase_Firstname = upper(FIRST_NAME)) ~> derivedColumn1",
+				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
