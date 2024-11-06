@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "GnanviDataFactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"InputBlob_connectionString": {
+			"value": ""
+		},
+		"MySql1_password": {
+			"value": ""
+		},
+		"MySql2_password": {
+			"value": ""
+		},
+		"Output_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "anviserver.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "Anvidatabase"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "KeerthiChandra"
+		},
+		"MySql1_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"MySql1_properties_typeProperties_database": {
+			"value": "mydb"
+		},
+		"MySql1_properties_typeProperties_username": {
+			"value": "root"
+		},
+		"MySql2_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"MySql2_properties_typeProperties_database": {
+			"value": "mydb"
+		},
+		"MySql2_properties_typeProperties_username": {
+			"value": "root"
+		},
+		"Output_properties_typeProperties_server": {
+			"value": "azuredatabas.database.windows.net"
+		},
+		"Output_properties_typeProperties_database": {
+			"value": "demodev"
+		},
+		"Output_properties_typeProperties_userName": {
+			"value": "ambi"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
