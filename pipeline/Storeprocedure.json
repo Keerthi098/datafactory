@@ -15,7 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[DeleteUser]"
+					"storedProcedureName": "[dbo].[DeleteUser]",
+					"storedProcedureParameters": {
+						"value": "@pipeline().parameters.id",
+						"type": "Expression"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
@@ -25,7 +29,7 @@
 		],
 		"parameters": {
 			"id": {
-				"type": "string"
+				"type": "object"
 			}
 		},
 		"annotations": []
