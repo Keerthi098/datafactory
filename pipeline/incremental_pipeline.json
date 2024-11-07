@@ -97,7 +97,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "select * from @{item().schemaname}.@{item().tablename} \r\nwhere @{item().deltacol}>@{item().last_processed_value}",
+										"value": "select * from @{item().schemaname}.@{item().tablename} \nwhere @{item().deltacol}>@{item().last_processed_value}",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
