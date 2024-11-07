@@ -35,11 +35,17 @@
 					"storedProcedureName": "[dbo].[ADT_pipelineStatus]",
 					"storedProcedureParameters": {
 						"adfName": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().DataFactory",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"pipelineName": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().Pipeline",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"runId": {
