@@ -27,8 +27,11 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "inputcsvfile",
-						"type": "DatasetReference"
+						"referenceName": "outputcsv",
+						"type": "DatasetReference",
+						"parameters": {
+							"ou": "output"
+						}
 					}
 				}
 			}
