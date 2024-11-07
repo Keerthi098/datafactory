@@ -13,10 +13,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "a",
-					"value": {
-						"value": "@variables('a')",
-						"type": "Expression"
-					}
+					"value": ""
 				}
 			},
 			{
