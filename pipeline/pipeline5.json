@@ -29,7 +29,8 @@
 					"dataset": {
 						"referenceName": "outputcsv",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
