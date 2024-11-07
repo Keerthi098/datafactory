@@ -49,15 +49,24 @@
 							"type": "String"
 						},
 						"runId": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().RunId",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"triggerName": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().TriggerName",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"triggerTime": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().TriggerTime",
+								"type": "Expression"
+							},
 							"type": "DateTime"
 						}
 					}
