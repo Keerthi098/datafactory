@@ -133,7 +133,13 @@
 							"outputs": [
 								{
 									"referenceName": "outputcsv",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"containername": {
+											"value": "@item().containername",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
