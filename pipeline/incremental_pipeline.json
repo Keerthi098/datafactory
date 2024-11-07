@@ -166,7 +166,10 @@
 								"storedProcedureName": "[dbo].[status_metatable]",
 								"storedProcedureParameters": {
 									"lastmodified": {
-										"value": "",
+										"value": {
+											"value": "@activity('Lookup2').output.firstRow.maxvalve",
+											"type": "Expression"
+										},
 										"type": "DateTime"
 									},
 									"tablename": {
