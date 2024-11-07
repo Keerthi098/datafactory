@@ -28,14 +28,16 @@
 					},
 					"dataset": {
 						"referenceName": "outputcsv",
-						"type": "DatasetReference",
-						"parameters": {
-							"ou": "output"
-						}
+						"type": "DatasetReference"
 					}
 				}
 			}
 		],
+		"parameters": {
+			"output": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
