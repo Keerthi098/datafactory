@@ -173,7 +173,10 @@
 										"type": "DateTime"
 									},
 									"tablename": {
-										"value": "",
+										"value": {
+											"value": "@item().tablename",
+											"type": "Expression"
+										},
 										"type": "String"
 									}
 								}
