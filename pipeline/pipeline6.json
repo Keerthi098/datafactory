@@ -32,7 +32,29 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[ADT_pipelineStatus]"
+					"storedProcedureName": "[dbo].[ADT_pipelineStatus]",
+					"storedProcedureParameters": {
+						"adfName": {
+							"value": "",
+							"type": "String"
+						},
+						"pipelineName": {
+							"value": "",
+							"type": "String"
+						},
+						"runId": {
+							"value": "",
+							"type": "String"
+						},
+						"triggerName": {
+							"value": "",
+							"type": "String"
+						},
+						"triggerTime": {
+							"value": "",
+							"type": "DateTime"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
