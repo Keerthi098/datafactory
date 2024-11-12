@@ -50,7 +50,18 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Switch1",
+							"type": "Switch",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"cases": []
+							}
+						}
+					]
 				}
 			}
 		],
