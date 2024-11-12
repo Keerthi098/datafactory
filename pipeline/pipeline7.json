@@ -65,7 +65,10 @@
 							},
 							"typeProperties": {
 								"variableName": "variable_name",
-								"value": ""
+								"value": {
+									"value": "@item().output.name",
+									"type": "Expression"
+								}
 							}
 						}
 					]
