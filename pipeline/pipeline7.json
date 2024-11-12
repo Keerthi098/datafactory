@@ -84,7 +84,7 @@
 		},
 		"variables": {
 			"variable_name": {
-				"type": "Array"
+				"type": "String"
 			}
 		},
 		"annotations": []
