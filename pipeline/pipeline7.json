@@ -48,12 +48,34 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata1').output.childItems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							}
+						}
+					]
+				}
 			}
 		],
 		"parameters": {
 			"container": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"variable_name": {
+				"type": "String"
 			}
 		},
 		"annotations": []
