@@ -58,7 +58,11 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"cases": []
+								"cases": [
+									{
+										"value": "Case1"
+									}
+								]
 							}
 						}
 					]
