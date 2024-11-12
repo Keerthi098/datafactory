@@ -17,7 +17,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Binary1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": {
+								"value": "@pipeline().parameters.container",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [],
 					"storeSettings": {
@@ -30,6 +36,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"container": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
