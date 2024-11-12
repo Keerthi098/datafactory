@@ -93,7 +93,10 @@
 				"outputs": [
 					{
 						"referenceName": "Binary1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "output"
+						}
 					}
 				]
 			}
