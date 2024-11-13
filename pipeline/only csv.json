@@ -113,7 +113,13 @@
 				"outputs": [
 					{
 						"referenceName": "Binary1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": {
+								"value": "@pipeline().parameters.outputcontainer",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
@@ -122,6 +128,10 @@
 			"container": {
 				"type": "string",
 				"defaultValue": "input"
+			},
+			"outputcontainer": {
+				"type": "string",
+				"defaultValue": "output"
 			}
 		},
 		"annotations": []
