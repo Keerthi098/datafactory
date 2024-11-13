@@ -91,9 +91,14 @@
 												}
 											},
 											"sink": {
-												"type": "BinarySink",
+												"type": "DelimitedTextSink",
 												"storeSettings": {
 													"type": "AzureBlobStorageWriteSettings"
+												},
+												"formatSettings": {
+													"type": "DelimitedTextWriteSettings",
+													"quoteAllText": true,
+													"fileExtension": ".txt"
 												}
 											},
 											"enableStaging": false
@@ -109,11 +114,8 @@
 										],
 										"outputs": [
 											{
-												"referenceName": "Binary1",
-												"type": "DatasetReference",
-												"parameters": {
-													"container": "output"
-												}
+												"referenceName": "outputcsv",
+												"type": "DatasetReference"
 											}
 										]
 									}
