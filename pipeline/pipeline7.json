@@ -84,7 +84,13 @@
 									]
 								}
 							],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"items": {
+									"value": "@item()",
+									"type": "Expression"
+								}
+							}
 						}
 					]
 				}
