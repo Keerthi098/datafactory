@@ -90,12 +90,30 @@
 													"type": "BinaryReadSettings"
 												}
 											},
+											"sink": {
+												"type": "BinarySink",
+												"storeSettings": {
+													"type": "AzureBlobStorageWriteSettings"
+												}
+											},
 											"enableStaging": false
 										},
 										"inputs": [
 											{
 												"referenceName": "Binary1",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"container": "@activity('Get Metadata1').output.childitems"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "Binary1",
+												"type": "DatasetReference",
+												"parameters": {
+													"container": "output"
+												}
 											}
 										]
 									}
