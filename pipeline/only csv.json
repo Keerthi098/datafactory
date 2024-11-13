@@ -177,8 +177,21 @@
 			{
 				"name": "ForEach2",
 				"type": "ForEach",
-				"dependsOn": [],
-				"userProperties": []
+				"dependsOn": [
+					{
+						"activity": "Filter2",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Filter2').output.value",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
