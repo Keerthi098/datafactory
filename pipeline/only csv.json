@@ -126,8 +126,12 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "outputcsv",
-									"type": "DatasetReference"
+									"referenceName": "csv",
+									"type": "DatasetReference",
+									"parameters": {
+										"container": "input",
+										"filename": "item().name"
+									}
 								}
 							],
 							"outputs": [
