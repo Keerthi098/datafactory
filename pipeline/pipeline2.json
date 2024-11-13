@@ -20,30 +20,18 @@
 						"type": "DataFlowReference",
 						"datasetParameters": {
 							"Employees": {
-								"container": {
-									"value": "@pipeline().globalParameters.Input_Global",
-									"type": "Expression"
-								},
 								"filename": {
 									"value": "@pipeline().parameters.Input_filename1",
 									"type": "Expression"
 								}
 							},
 							"Departments": {
-								"container": {
-									"value": "@pipeline().globalParameters.Input_Global",
-									"type": "Expression"
-								},
 								"filename": {
 									"value": "@pipeline().parameters.Input_filename2",
 									"type": "Expression"
 								}
 							},
 							"sink1": {
-								"container": {
-									"value": "@pipeline().parameters.Output_container",
-									"type": "Expression"
-								},
 								"filename": {
 									"value": "@pipeline().parameters.Output_filename",
 									"type": "Expression"

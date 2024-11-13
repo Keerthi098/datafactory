@@ -50,10 +50,6 @@
 						"referenceName": "csv",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": {
-								"value": "@pipeline().globalParameters.Input_Global",
-								"type": "Expression"
-							},
 							"filename": {
 								"value": "@pipeline().parameters.input_filename",
 								"type": "Expression"

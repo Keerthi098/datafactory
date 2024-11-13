@@ -30,10 +30,6 @@
 								}
 							},
 							"sink1": {
-								"container": {
-									"value": "@pipeline().parameters.Containername",
-									"type": "Expression"
-								},
 								"filename": {
 									"value": "@pipeline().parameters.Filename",
 									"type": "Expression"
