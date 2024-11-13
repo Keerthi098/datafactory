@@ -63,7 +63,7 @@
 								},
 								"ifFalseActivities": [
 									{
-										"name": "Copy data2",
+										"name": "Noncsvfiles",
 										"type": "Copy",
 										"dependsOn": [],
 										"policy": {
