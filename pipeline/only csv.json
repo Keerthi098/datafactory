@@ -104,7 +104,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": {
-								"value": "@activity('Filter1').output.value",
+								"value": "@activity('Filter1').output",
 								"type": "Expression"
 							}
 						}
