@@ -16,10 +16,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "outputcsv",
+						"referenceName": "Binary1",
 						"type": "DatasetReference",
 						"parameters": {
-							"filename": "input"
+							"container": "input"
 						}
 					},
 					"fieldList": [
@@ -27,10 +27,12 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"modifiedDatetimeStart": null,
+						"modifiedDatetimeEnd": null,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
-						"type": "DelimitedTextReadSettings"
+						"type": "BinaryReadSettings"
 					}
 				}
 			},
