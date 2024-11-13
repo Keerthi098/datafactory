@@ -81,13 +81,14 @@
 										"userProperties": [],
 										"typeProperties": {
 											"source": {
-												"type": "BinarySource",
+												"type": "DelimitedTextSource",
 												"storeSettings": {
 													"type": "AzureBlobStorageReadSettings",
-													"recursive": true
+													"recursive": true,
+													"enablePartitionDiscovery": false
 												},
 												"formatSettings": {
-													"type": "BinaryReadSettings"
+													"type": "DelimitedTextReadSettings"
 												}
 											},
 											"sink": {
@@ -101,21 +102,32 @@
 													"fileExtension": ".txt"
 												}
 											},
-											"enableStaging": false
+											"enableStaging": false,
+											"translator": {
+												"type": "TabularTranslator",
+												"typeConversion": true,
+												"typeConversionSettings": {
+													"allowDataTruncation": true,
+													"treatBooleanAsNumber": false
+												}
+											}
 										},
 										"inputs": [
 											{
-												"referenceName": "Binary1",
+												"referenceName": "csv",
 												"type": "DatasetReference",
 												"parameters": {
-													"container": "@activity('Get Metadata1').output.childitems"
+													"filename": "item().csv"
 												}
 											}
 										],
 										"outputs": [
 											{
 												"referenceName": "outputcsv",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"filename": "item().name"
+												}
 											}
 										]
 									}
