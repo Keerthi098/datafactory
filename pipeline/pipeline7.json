@@ -63,7 +63,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@con",
+									"value": "@contains(item().name,'.csv')",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
