@@ -90,6 +90,12 @@
 							"type": "BinaryReadSettings"
 						}
 					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -101,6 +107,15 @@
 								"value": "@activity('Filter1').output",
 								"type": "Expression"
 							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Binary1",
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "output"
 						}
 					}
 				]
