@@ -54,7 +54,23 @@
 						"value": "@activity('Get Metadata1').output.childItems",
 						"type": "Expression"
 					},
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "File_name",
+								"value": ""
+							}
+						}
+					]
 				}
 			}
 		],
@@ -64,7 +80,7 @@
 			}
 		},
 		"variables": {
-			"variable_name": {
+			"File_name": {
 				"type": "String"
 			}
 		},
