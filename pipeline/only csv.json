@@ -113,13 +113,7 @@
 				"outputs": [
 					{
 						"referenceName": "Binary1",
-						"type": "DatasetReference",
-						"parameters": {
-							"container": {
-								"value": "@activity('Filter1').output",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
