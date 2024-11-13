@@ -66,11 +66,8 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "File_name",
-								"value": {
-									"value": "@item().name",
-									"type": "Expression"
-								}
+								"variableName": "pipelineReturnValue",
+								"setSystemVariable": true
 							}
 						}
 					]
