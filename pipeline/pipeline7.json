@@ -117,7 +117,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": {
-											"value": "@item().filename.csv",
+											"value": "@concat(pipeline().parameters.container, '/', item().name, '/')\n",
 											"type": "Expression"
 										}
 									}
