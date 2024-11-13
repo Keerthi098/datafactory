@@ -51,6 +51,10 @@
 					"items": {
 						"value": "@activity('Get Metadata1').output.childItems",
 						"type": "Expression"
+					},
+					"condition": {
+						"value": "@and(equals(item().type,'File'),endswith(item().name,'.csv'))\n",
+						"type": "Expression"
 					}
 				}
 			}
