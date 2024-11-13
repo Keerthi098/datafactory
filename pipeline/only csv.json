@@ -152,10 +152,6 @@
 			"container": {
 				"type": "string",
 				"defaultValue": "input"
-			},
-			"outputcontainer": {
-				"type": "string",
-				"defaultValue": "output"
 			}
 		},
 		"annotations": []
