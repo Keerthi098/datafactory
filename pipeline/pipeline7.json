@@ -63,7 +63,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@and(equals(item().type,'File'),endswith(item().name,'.csv'))",
+									"value": "@con",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
