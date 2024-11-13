@@ -137,7 +137,10 @@
 							"outputs": [
 								{
 									"referenceName": "outputcsv",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": "item().csv"
+									}
 								}
 							]
 						}
@@ -153,12 +156,6 @@
 			"outputcontainer": {
 				"type": "string",
 				"defaultValue": "output"
-			},
-			"input_filename": {
-				"type": "string"
-			},
-			"output_filename": {
-				"type": "string"
 			}
 		},
 		"annotations": []
