@@ -19,7 +19,7 @@
 						"referenceName": "Binary1",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": {
+							"filename": {
 								"value": "@pipeline().parameters.container",
 								"type": "Expression"
 							}
