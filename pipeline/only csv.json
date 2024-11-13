@@ -138,7 +138,13 @@
 							"outputs": [
 								{
 									"referenceName": "output_csv",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
