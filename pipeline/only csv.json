@@ -108,13 +108,7 @@
 							"inputs": [
 								{
 									"referenceName": "outputcsv",
-									"type": "DatasetReference",
-									"parameters": {
-										"containername": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						}
