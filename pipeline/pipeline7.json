@@ -43,7 +43,13 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@contains(activity('Get Metadata1').output.itemName,'.csv')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
