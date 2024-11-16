@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@contains(activity('Get Metadata1').output.itemName,'.csv')",
+						"value": "@contains(activity('Get Metadata1').output.childItems,'.csv')",
 						"type": "Expression"
 					}
 				}
