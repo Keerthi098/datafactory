@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@contains(activity('Get Metadata1').output.childItems,'.csv')",
+						"value": "@equals(activity('GetMetadataActivity').output.exists, true)",
 						"type": "Expression"
 					}
 				}
